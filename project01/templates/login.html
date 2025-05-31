@@ -15,7 +15,7 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h2 class="text-2xl font-bold mb-6 text-center text-gray-700">Login Page</h2>
-        <form id="loginForm" action="/submit" method="get">
+        <form id="loginForm" action="{{ url_for('submit') }}" method="get">
             <div class="mb-4">
                 <label class="danger">{{ err }}</label>
                 <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email Address</label>
