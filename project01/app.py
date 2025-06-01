@@ -1,4 +1,6 @@
 from flask import Flask, render_template,request, redirect, url_for
+import _mysql_connector
+from _mysql_connector import Error
 app = Flask(__name__)
 
 @app.route('/')
